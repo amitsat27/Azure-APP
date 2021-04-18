@@ -1,6 +1,7 @@
 from flask import Flask,render_template,request
 from datetime import datetime
 app = Flask(__name__)
+
 @app.route("/")
 def landing():
     return render_template("index.html")
@@ -23,3 +24,5 @@ def contact():
 def post():
     return render_template("post.html")
 
+
+app.run()
