@@ -25,4 +25,5 @@ def post():
     return render_template("post.html")
 
 
-app.run()
+if __name__ == "__main__":
+    app.run()
